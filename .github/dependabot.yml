@@ -1,0 +1,12 @@
+version: 2
+
+updates:
+- package-ecosystem: docker
+  directory: /
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 3
+  ignore:
+  - dependency-name: eclipse-temurin
+    update-types:
+    - version-update:semver-major
